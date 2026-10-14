@@ -1,0 +1,29 @@
+BRISA — CÓDIGO COMPLETO Y PUBLICACIÓN PRIVADA
+
+Incluye modo hogar, modo técnico, mapa, simulador visual, fuentes y funciones de servidor.
+
+PUBLICACIÓN COMPLETA EN TU PROPIA CUENTA DE NETLIFY
+1. Descomprimí este ZIP. La carpeta brisa contiene el proyecto.
+2. Creá un repositorio privado en tu propia cuenta de GitHub y subí el contenido de brisa.
+3. En Netlify elegí crear/importar un proyecto desde ese repositorio.
+4. Usá la raíz del proyecto como directorio base, npm run build como comando de construcción y dist como carpeta publicada. netlify.toml ya contiene esta configuración y la carpeta de funciones.
+5. Comprobá el despliegue y los apartados Fuentes, Mapa y Probá con tu casa.
+
+ACCESO PRIVADO A LA WEB
+Un ZIP y un repositorio privado NO restringen quién puede abrir la web publicada.
+En Netlify: Project configuration > General > Visitor access > Password Protection > Configure.
+Elegí contraseña o acceso del equipo, según las opciones disponibles en tu plan, y protegé All deploys para incluir el sitio principal y las vistas previas.
+Estas opciones dependen del plan. Si no están disponibles, mantené el proyecto sin publicar hasta disponer de un alojamiento con control de acceso.
+Antes de compartir la dirección, comprobá desde una ventana privada sin sesión que exige autenticación.
+Documentación oficial: https://docs.netlify.com/manage/security/secure-access-to-sites/password-protection/
+No hay una contraseña oculta en JavaScript: la protección debe aplicarse en el alojamiento.
+
+DATOS REALES
+Arrastrar únicamente la carpeta dist o el ZIP al despliegue manual de Netlify no publica las funciones. Conserva la interfaz, pero no habilita las consultas /api de tarifas, precios y cotización. Usá el despliegue desde repositorio con build para obtener la versión completa.
+Las consultas necesitan internet. Las fuentes pueden cambiar y no todas las distribuidoras tienen lector automático: las demás usan el cargo variable de la factura, sin inventar un promedio.
+
+ARCHIVOS Y DATOS
+README.md explica los archivos, fuentes y limitaciones.
+No se recuperó ninguna base de datos privada de la página original. Esta versión guarda perfiles y escenarios en el navegador de cada persona (localStorage). Para trasladarlos, exportá/importá el respaldo JSON desde Mi perfil.
+El ZIP no contiene tus escenarios personales guardados en otro navegador.
+No incluye node_modules: npm ci instala las dependencias fijadas en package-lock.json.

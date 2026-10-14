@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="es-AR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#143e34" />
+    <meta
+      name="description"
+      content="Brisa: explorá la energía solar y eólica de tu hogar. Simulá baterías, generador y ahorro."
+    />
+    <title>Brisa · Tu energía, más clara</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23143e34'/%3E%3Cpath d='M36 8 16 36h16l-5 20 22-30H33z' fill='%23d5ef95'/%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="vendor/leaflet.css">
+</head>
+  <body>
+    <a class="skip" href="#main">Saltar al contenido</a>
+    <aside>
+      <a class="brand" href="#home">ϟ brisa<i>.</i></a>
+      <div class="by">By Los Vagos</div>
+      <div class="navlabel">Tu espacio energético</div>
+      <nav id="nav"></nav>
+      <div class="sidenote">
+        ☀<strong>Un hogar con más futuro.</strong>Entendé tu energía.<br />Elegí
+        con mejores datos.<br /><br />Edición 02 · Hecha para explorar
+      </div>
+    </aside>
+    <div class="workspace">
+      <header>
+        <div class="crumb">Mi espacio <b id="crumb">Inicio</b></div>
+        <div class="actions">
+          <span class="local">● Historial en este navegador</span
+          ><button class="theme" id="theme" aria-label="Cambiar tema">
+            ☾ Modo oscuro
+          </button>
+        </div>
+      </header>
+      <main id="main" tabindex="-1"></main>
+      <footer>
+        <span>brisa. · Tu energía, más clara.</span
+        ><span>By Los Vagos · Simulación de prefactibilidad</span>
+      </footer>
+    </div>
+    <dialog id="dialog"></dialog>
+    <div id="toast" role="status" aria-live="polite"></div>
+    <script src="app.js"></script>
+    <script src="providers.js"></script>
+<script src="household.js"></script>
+<script src="vendor/leaflet.js"></script>
+<script src="explore.js"></script>
+  </body>
+</html>

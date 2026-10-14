@@ -1,0 +1,1 @@
+{"name":"brisa-energia","private":true,"type":"module","scripts":{"build":"node scripts/build.mjs"},"dependencies":{"leaflet":"^1.9.4","unpdf":"1.8.1"},"devDependencies":{"esbuild":"^0.28.1","linkedom":"^0.18.13","prettier":"^3.9.9"}}
